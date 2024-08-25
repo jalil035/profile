@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: "Acme", sans-serif;
+}
+@media screen and (max-width:1399px){
+
+}
+@media screen and (max-width:1199px){
+
+}
+@media screen and (max-width:991px){
+    .round_icon{
+        display: none;
+    }
+    .horizental_line{
+        margin-top: 6.5rem;
+    }
+    .horizental_line1{
+        margin-top: 6.5rem;
+    }
+
+}
+@media screen and (max-width:768px){
+    .line_hider{
+        display: none;
+        margin-top: 1rem;
+    }
+    .exp_text_body{
+        padding: 0 7rem;
+        background: gray;
+        border-radius: 1rem;
+    }
+    .about_custom{
+        padding: 0 0;
+    }
+    .custom_line{
+        display: none;
+    }
+}
+@media screen and (max-width:576px){
+    html{
+        font-size: 40.5%;
+    }
+}

@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: "Acme", sans-serif;
+}
+.bg-color_custom{
+    background: rgb(48, 51, 58);
+}
+.custom_body{
+    padding: 0 7rem;
+}
+.custom_body1{
+    padding: 0 5rem;
+}
+.nav_name_style{
+    font-family: "Pacifico", cursive;
+    font-weight: 600;
+}
+/* Hero Section start */
+.details_body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 6rem 0 0 0;
+}   
+.details_body span:first-child{
+    font-size: 2.5rem;
+    color: white;
+}
+.jalil_name{
+    font-size: 4rem;
+    color: orange;
+    font-weight: 800;
+}
+.details_body P{
+    font-size: 2.5rem;
+    color: white;
+}
+.image_controler{
+    position: relative;
+    display: flex;
+    justify-content: end;
+    width: 20rem;
+}
+.image_controler img{
+    width: 100%;
+}
+.image_controler .social_icon{
+    display: flex;
+    flex-direction: column;
+    top: 15rem;
+    right: -2rem;
+    position: absolute;
+    gap: .8rem;
+}
+.social_icon span{
+    width: .4rem;
+    height: 3rem;
+    background: orange;
+    margin: 0 auto;
+}
+.social_icon i{
+    color: white;
+    font-size: 2.5rem;
+}
+/* Hero Section end */
+
+/* about section start */
+.about_custom{
+    padding: 3rem 9rem;
+}
+.about_custom h1{
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: "Acme", sans-serif;
+}
+.about_details{
+    display: flex;
+}
+.custom_line{
+    width: 10rem;
+    height: .5rem;
+    background: orange;
+    margin: 1.4rem 1.5rem 0 0;
+}
+.about_custom p{
+    font-size: 1.9rem;
+    text-align: justify;
+    font-family: "Josefin Sans", sans-serif;
+}
+/* about section end */
+
+/* skill Section start */
+.skills_titel{
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 700;
+    margin: 4rem auto;
+    font-family: "Acme", sans-serif;
+}
+.body_asset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 18rem;
+    height: 18rem;
+    background: rgb(61, 62, 68);
+    border-radius: 1rem;
+    padding: 2rem;
+    cursor: pointer;
+}
+.body_asset:hover{
+    background: rgb(240, 190, 107);
+}
+.body_img_control{
+    width: 6rem;
+}
+.body_img_control img{
+    width: 100%;
+    padding: 3rem 0 .7rem 0;
+}
+.body_asset p{
+    font-size: 3rem;
+    font-weight: 700;
+}
+/* skill Section end */
+
+/* Portfolio section start */
+.card_body{
+    width: 27rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.card_body .card_details{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 27rem;
+    height: 24.7rem;
+    border-radius: 1.3rem;
+    padding: 3rem;
+    text-align: center;
+    background: none;
+    transition: all .8s ease-in-out;
+    overflow: hidden;
+    gap: 2rem;
+}
+.card_body:hover .card_details{
+    transform: translate(0);
+    background: rgba(0, 0, 0, 0.568);
+}
+.card_details h2{
+    font-size: 2.6rem;
+    font-weight: 700;
+    visibility: hidden;
+    transition: all .5s;
+    transform: translateY(-5rem);
+}
+.card_body:hover .card_details h2{
+    transform: translate(0);
+    visibility: visible;
+}
+.card_details p{
+    font-size: 1.2rem;
+    visibility: hidden;
+    transition: all .5s;
+    transform: translateX(-22rem);
+}
+.card_body:hover .card_details p{
+    transform: translate(0);
+    visibility: visible;
+}
+.btn_custom{
+    text-decoration: none;
+    background: orange;
+    font-size: 1.5rem;
+    padding: .6rem;
+    border-radius: .7rem;
+    color: white;
+    visibility: hidden;
+    transition: all .5s;
+    transform: translateY(6rem);
+}
+.card_body:hover .card_details .btn_custom{
+    transform: translate(0);
+    visibility: visible;
+}
+.card_image{
+    width: 27rem;
+}
+.card_image img{
+    width: 100%;
+    border-radius: 1.3rem;
+}
+/* Portfolio section end */
+.experience span{
+    font-size: 4rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    font-family: "Acme", sans-serif;
+}
+/* Experience section start */
+.right_icon{
+    position: relative;
+}
+.right_icon .right_icon_text{
+    position: absolute;
+    top: .1rem;
+    left: 1.6rem;
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+.round_icon{
+    width: 2rem;
+    height: 2rem;
+    background: orange;
+    border-radius: 50%;
+    margin-top: .5rem;
+    position: relative;
+    z-index: 1;
+}
+.round_icon::after{
+    content: '';
+    position: absolute;
+    background: orange;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    filter: blur(.6rem);
+}
+
+.horizental_line{
+    width: .5rem;
+    height: 80%;
+    background: white;
+    margin: 2rem 0 0 .8rem;
+}
+.horizental_line1{
+    width: .5rem;
+    height: 60%;
+    background: white;
+    margin: 2rem 0 0 .8rem;
+}
+
+.exp_text_body h2{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2.3rem;
+    font-family: "Acme", sans-serif;
+}
+.exp_text_body p{
+    font-size: 1.7rem;
+    text-align: justify;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+/* Experience section end */
+/* Contact Me start */
+/* .contact_me_body{
+    background: rgb(70, 69, 68);
+} */
+.contact_me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.contact_me span{
+    width: 42%;
+    height: .5rem;
+    background: orange;
+}
+.contact_me h2{
+    color: white;
+    font-family: "Acme", sans-serif;
+    font-size: 3.6rem;
+    text-align: center;
+}
+.contact_social_body{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.contact_social_body1{
+    display: flex;
+    justify-content: center;
+}
+.contact_email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    background: rgb(29, 29, 29);
+    gap: .7rem;
+    border-radius: .6rem;
+    padding: 2rem;
+    cursor: pointer;
+}
+.contact_email i{
+    color: white;
+    font-size: 2.2rem;
+}
+.contact_email span{
+    font-size: 1.3rem;
+    color: orange;
+}
+.contactme_social_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.contactme_social_icon i{
+    color: white;
+    font-size: 2.5rem;
+}
+.contactme_social_icon span{
+    width: 42%;
+    height: .5rem;
+    background: orange;
+}
+.thanks_mess{
+    font-size: 5rem;
+    font-family: "Acme", sans-serif;
+    margin: 5rem auto;
+    color: orange;
+    text-align: center;
+}
