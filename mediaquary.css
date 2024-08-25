@@ -31,9 +31,13 @@ html{
         margin-top: 1rem;
     }
     .exp_text_body{
-        padding: 0 7rem;
-        background: gray;
+        padding: 1rem 7rem;
+        background: orange;
         border-radius: 1rem;
+        margin: 0 0;
+    }
+    .exp_text_body p{
+        font-size: 2rem;
     }
     .about_custom{
         padding: 0 0;
